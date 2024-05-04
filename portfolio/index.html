@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- --------- UNICONS ---------- -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <!-- ---------CSS ---------------- -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- --------------email js cdn -------------->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <title>Portfolio | gopinath</title>
+  </head>
+  <body>
+    <nav id="header">
+      <div class="nav-logo">
+        <p class="nav-name">Gopinath</p>
+        <span>.</span>
+      </div>
+      <div class="nav-menu" id="myNavMenu">
+        <ul class="nav_menu_list">
+          <li class="nav_list">
+            <a href="#home" class="nav-link active-link">Home</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="#about" class="nav-link">About</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="#projects" class="nav-link">Projects</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="#contact" class="nav-link">Contact</a>
+            <div class="circle"></div>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-button">
+        <a class="btn" href="gopinath-resume.pdf" download>
+          <button>Download CV <i class="uil uil-file-alt"></i></button>
+        </a>
+      </div>
+      <div class="nav-menu-btn">
+        <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+      </div>
+    </nav>
+
+    <section class="home" id="home">
+      <div class="home-right">
+        <div class="featured-text-card">
+          <span>Gopinath</span>
+        </div>
+        <div class="featured-name">
+          <h1>I'M <span class="typedText"></span></h1>
+        </div>
+        <div class="home-info">
+          <p>
+            Experienced frontend developer with a passion for creating visually
+            stunning and user-friendly websites.
+          </p>
+        </div>
+
+        <div class="hire-btn">
+          <a href="#contact" class="btn blue-btn"> <button>Hire Me</button></a>
+          <a class="btn" href="gopinath-resume.pdf" download="gopinath-resume">
+            <button class="">
+              Download CV <i class="uil uil-file-alt"></i></button
+          ></a>
+        </div>
+
+        <div class="social_icons">
+          <div class="icon">
+            <a class="social-a" href="https://mail.google.com/mail"
+              ><i class="uil uil-envelope"></i
+            ></a>
+          </div>
+          <div class="icon">
+            <a
+              class="social-a"
+              href="https://www.linkedin.com/in/gopinath-t-5b2777290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+              ><i class="uil uil-linkedin-alt"></i
+            ></a>
+          </div>
+          <div class="icon">
+            <a class="social-a" href="https://web.whatsapp.com/"
+              ><i class="uil uil-whatsapp"></i
+            ></a>
+          </div>
+          <div class="icon">
+            <a class="social-a" href="https://github.com/Gopinath-webdeveloper"
+              ><i class="uil uil-github-alt"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="home-left">
+        <div class="image">
+          <img src="IMG_2263.JPG" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!--------------------- about section-------------------- -->
+    <section class="more-about" id="about">
+      <div class="more-about-left">
+        <div class="image">
+          <img src="IMG_2263.JPG" alt="avatar" />
+        </div>
+      </div>
+      <div class="more-about-right">
+        <h1>Skills</h1>
+        <div class="skills">
+          <div class="frontend">
+            <h1>Frontend</h1>
+            <div>html</div>
+            <div>css</div>
+            <div>JavaScript</div>
+            <div>React Js</div>
+          </div>
+          <div class="Backend">
+            <h1>Backend</h1>
+            <div>Express Js</div>
+          </div>
+          <div class="database">
+            <h1>database</h1>
+            <div>MongoDB</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--------------------- project section-------------------- -->
+    <h1 class="project-title" id="projects">projects section</h1>
+
+    <section class="project">
+      <!-- <div class="project-down"> -->
+      <div class="project-details">
+        <img src="e-commerece_page-0001.jpg" alt="" />
+        <h3>E-commerece website</h3>
+        <button>
+          <a href="https://deploy-frontend-nm8k.onrender.com/">view project</a>
+        </button>
+        <h3>
+          <a
+            class="source-code"
+            href="https://github.com/Gopinath-webdeveloper/e-commerce-frontend"
+          >
+            download source code</a
+          >
+        </h3>
+      </div>
+      <div class="project-details">
+        <img src="robo-project_page-0001.jpg" alt="" />
+        <h3>Robo - virtual assistant</h3>
+        <button>
+          <a href="https://robo-virtual-assistant.vercel.app">view project</a>
+        </button>
+        <h3>
+          <a
+            class="source-code"
+            href="https://github.com/Gopinath-webdeveloper/robo-virtual-assistant"
+          >
+            download source code</a
+          >
+        </h3>
+      </div>
+      <div class="project-details">
+        <div class="img"></div>
+        <!-- <img src="qrgeneraor_page-0001.jpg" alt="" /> -->
+        <h3>QR -generator</h3>
+        <button>
+          <a href="https://qr-generator-sand.vercel.app">view project</a>
+        </button>
+        <h3>
+          <a
+            class="source-code"
+            href="https://github.com/Gopinath-webdeveloper/QR-generator.git"
+          >
+            download source code</a
+          >
+        </h3>
+      </div>
+      <!-- </div> -->
+    </section>
+
+    <!------------------- contact ----------------->
+    <div class="contact" id="contact">
+      <div class="contact-heading">
+        <h1>get in touch with me</h1>
+
+        <p>Do you have project in your mind contact me here</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-add">
+          <p><i class="uli uil-envelope">email : gopinath30127@gmail.com</i></p>
+          <p><i class="uil uil-whatsapp"> phone: 9087323987</i></p>
+        </div>
+        <div class="contact-mail">
+          <div class="contact-ne">
+            <input type="text" id="name" placeholder="enter name" required />
+            <input type="email" id="email" placeholder="enter email" required />
+          </div>
+          <input
+            type="text"
+            id="subject"
+            class="subject"
+            placeholder="subject"
+          />
+          <textarea
+            class="text"
+            name=""
+            id="message"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <button onclick="email()">
+            send <i class="uil uil-envelope"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <h3>Gopinath</h3>
+      <ul class="footer-nav">
+        <li class="footer-nav-list"><a href="#home">Home</a></li>
+        <li class="footer-nav-list"><a href="#about">About</a></li>
+        <li class="footer-nav-list"><a href="#projects">Project</a></li>
+        <li class="footer-nav-list"><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="social_icons">
+        <div class="icon">
+          <a class="social-a" href="https://mail.google.com/mail"
+            ><i class="uil uil-envelope"></i
+          ></a>
+        </div>
+        <div class="icon">
+          <a
+            class="social-a"
+            href="https://www.linkedin.com/in/gopinath-t-5b2777290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+            ><i class="uil uil-linkedin-alt"></i
+          ></a>
+        </div>
+        <div class="icon">
+          <a class="social-a" href="https://web.whatsapp.com/"
+            ><i class="uil uil-whatsapp"></i
+          ></a>
+        </div>
+        <div class="icon">
+          <a class="social-a" href="https://github.com/Gopinath-webdeveloper"
+            ><i class="uil uil-github-alt"></i
+          ></a>
+        </div>
+      </div>
+      <p>copyright @ Gopinath - All rights reserved</p>
+    </footer>
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
